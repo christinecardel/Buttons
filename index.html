@@ -1,22 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-roboto/6.2.0/css/all.min.css">
   <style>
+    :root {
+      --my-color: #34495e;
+      --my-color-accent: #2c3e50;
+      --black: #3c3c3c;
+      --black-accent: #2d2d2d;
+      --blue: #809bce;
+      --blue-accent: #5c6f94;
+      --purple: #8a508f;
+      --purple-accent: #5d3661;
+      --mint: #b8e0d4;
+      --mint-accent: #8ba89f;
+      --pink: #eac4d5;
+      --pink-accent: #b495a3;
+      --green: #74a892;
+      --green-accent: #5e8675;
+      --red: #d74a49;
+      --red-accent: #b53f3f;
+      --orange: #d35400;
+      --orange-accent: #9e4102;
+      --yellow: #f1c40f;
+      --yellow-accent: #bd9a0c;
+    }
+    
     button {
-      background: #809bce; /* Yellow background color */
-      color: #ffffff; /* White text color */
-      font-family: 'sans-serif workhorse', sans-serif; /* Font family */
-      font-size: 18px; /* Font size */
-      padding: 10px 20px; /* Padding */
-      border: none; /* No border */
-      border-radius: 5px; /* Rounded corners */
-      cursor: pointer; /* Cursor style */
+      background: none;
+      color: inherit;
+      border: none;
+      padding: 0;
+      font: inherit;
+      cursor: pointer;
+      outline: inherit;
+    }
+
+    i {
+      padding-right: 2px;
+    }
+
+    body {
+      text-align: center; /* Center-align the button */
+    }
+
+    .btn {
+      color: #ffffff;
+      font-family: 'sans-serif workhorse', sans-serif;
+      font-size: 18px;
+      height: 1cm;
+      width: auto;
+      line-height: 1cm;
+      padding: 0 20px;
+      background-color: var(--blue);
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0px 4px 0px var(--blue-accent);
+    }
+
+    .btn:hover {
+      background-color: var(--blue-accent);
+    }
+
+    .btn:active {
+      box-shadow: 0 0;
+      background-color: var(--blue-accent);
     }
   </style>
 </head>
 
 <body>
-  <button onclick="navigate()">Choose Options</button>
+  <button class="btn rounded" type="button" onclick="navigate()">Choose Options</button>
   
   <script>
     function navigate() {
